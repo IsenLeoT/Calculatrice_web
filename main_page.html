@@ -10,6 +10,7 @@
         }
     </style>
     <body> 
+        <!-- Creation de l'instance dans le script elle se nomme Calculatrice-->
         <!--QUESTION 1 : CREATION DE LA CALCULATRICE DE BASE-->
         <table>
             <tr>
@@ -19,31 +20,33 @@
                 <td colspan="5"><input id="affichage"></td> 
             </tr> 
             <tr> 
-                <td><button onclick="afficher('7')">7</button></td> 
-                <td><button onclick="afficher('8')">8</button></td> 
-                <td><button onclick="afficher('9')">9</button></td> 
-                <td><button onclick="afficher('-')">-</button></td>
-                <td><button onclick="effacer()"> C </button></td>
+                <td><button onclick="Calculatrice.afficher('7')">7</button></td> 
+                <!-- On vient changer le parametre de l'instance et on l'utilise sur la fonction dedie-->
+                <td><button onclick="Calculatrice.afficher('8')">8</button></td> 
+                <td><button onclick="Calculatrice.afficher('9')">9</button></td> 
+                <td><button onclick="Calculatrice.afficher('-')">-</button></td>
+                <td><button onclick="Calculatrice.effacer()"> C </button></td>
             </tr> 
             <tr> 
-                <td><button onclick="afficher('4')">4</button></td> 
-                <td><button onclick="afficher('5')">5</button></td> 
-                <td><button onclick="afficher('6')">6</button></td> 
-                <td><button onclick="afficher('*')">*</button></td>
-                <td><button onclick="afficher('(')">(</button></td>
+                <td><button onclick="Calculatrice.afficher('4')">4</button></td> 
+                <td><button onclick="Calculatrice.afficher('5')">5</button></td> 
+                <td><button onclick="Calculatrice.afficher('6')">6</button></td> 
+                <td><button onclick="Calculatrice.afficher('*')">*</button></td>
+                <td><button onclick="Calculatrice.afficher('(')">(</button></td>
             </tr> 
             <tr> 
-                <td><button onclick="afficher('1')">1</button></td> 
-                <td><button onclick="afficher('2')">2</button></td> 
-                <td><button onclick="afficher('3')">3</button></td> 
-                <td><button onclick="afficher('/')">/</button></td>
-                <td><button onclick="afficher(')')">)</button></td>
+                <td><button onclick="Calculatrice.afficher('1')">1</button></td> 
+                <td><button onclick="Calculatrice.afficher('2')">2</button></td> 
+                <td><button onclick="Calculatrice.afficher('3')">3</button></td> 
+                <td><button onclick="Calculatrice.afficher('/')">/</button></td>
+                <td><button onclick="Calculatrice.afficher(')')">)</button></td>
             </tr> 
             <tr>
-                <td><button onclick="afficher('0')">0</button></td> 
-                <td><button onclick="afficher('.')">.</button></td> 
-                <td><button onclick="afficher('+')">+</button></td> 
-                <td colspan="2"><button onclick="calculer()"> = </button></td> 
+                <td><button onclick="Calculatrice.afficher('0')">0</button></td> 
+                <td><button onclick="Calculatrice.afficher('.')">.</button></td> 
+                <td><button onclick="Calculatrice.afficher('+')">+</button></td> 
+                <td><button onclick="Calculatrice.calculer()"> = </button></td> 
+                <td><button onclick="Calculatrice.retour()"> Back </button></td>
             </tr> 
         </table>
 
